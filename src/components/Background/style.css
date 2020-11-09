@@ -1,0 +1,17 @@
+#backgroundVideo {
+    position: fixed;
+    top: -10%;
+    right: -25%;
+    width: 200%;
+    z-index: -2;
+}
+
+#background {
+    background-color: rgba(255, 255, 255, .3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}

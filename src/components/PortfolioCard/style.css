@@ -1,0 +1,57 @@
+.card-wrapper {
+    display: inline-block;
+    flex-shrink: 0;
+    height: 450px;
+    scroll-snap-align: start;
+    width: 100%;
+}
+
+.card {
+    height: 100%;
+    padding: 5%;
+    white-space: normal;
+    width: 100%;
+}
+
+.dark {
+    background-color: rgba(58, 78, 51, 0.2);
+}
+
+.light {
+    background-color: rgba(88, 128, 74, 0.2);
+}
+
+.title-wrapper {
+    border: 1px solid rgba(255, 255, 255, .8);
+    height: fit-content;
+    margin: auto;
+    padding: 5px 10px;
+    text-align: center;
+    width: max-content;
+}
+
+.card h2 {
+    background-color: transparent;
+    margin: 5px auto 30px auto;
+}
+
+.img-wrapper {
+    margin: 10% auto;
+    width: 80%;
+}
+
+img {
+    width: 100%;
+}
+
+.card p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding: 4px 5%;
+    width: 100%;
+}
+
+.card a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+}

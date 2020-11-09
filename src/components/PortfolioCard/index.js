@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css';
 
 export const PortfolioCard = (props) => {
     const { id, name, link, image, description } = props;
