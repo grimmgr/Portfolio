@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name":"se7en",
+        "link":"https://se-7-en.herokuapp.com/",
+        "image":"assets/images/se7en.png",
+        "description":"Bucketlist app to track and explore things to do before the world ends"
+    },
+    {
+        "id": "2",
+        "name":"Selling Sunset Employee Directory",
+        "link":"https://grimmgr.github.io/Selling-Sunset-Employee-Directory/",
+        "image":"assets/images/sunset.jpg",
+        "description":"Built with React"
+    },
+    {
+        "id": "3",
+        "name":"Cheeseburger In Paradise",
+        "link":"https://infinite-plains-28150.herokuapp.com/",
+        "image":"assets/images/cheeseburger.png",
+        "description":"Practice with MySQL, Node, Express, Handlebars, and writing an ORM"
+    },
+    {
+        "id": "4",
+        "name":"Seasons",
+        "link":"https://grimmgr.github.io/Seasons/",
+        "image":"assets/images/seasons.png",
+        "description":"Weather app for Justin Bieber fans"
+    },
+    {
+        "id": "5",
+        "name":"Employee Tracker",
+        "link":"https://github.com/grimmgr/Employee-Tracker",
+        "image":"employee-tracker.png",
+        "description":"Command-line content magagement system for employers"
+    },
+    {
+        "id": "6",
+        "name":"Turnip Da Beet",
+        "link":"https://sbhwang23.github.io/Turnip-Da-Beet/",
+        "image":"assets/images/turnip.png",
+        "description":"Search recipes and related songs"
+    }
+]
