@@ -29,6 +29,32 @@ section {
     scroll-snap-align: start;
 }
 
+h2 {
+    background-color: rgba(88, 128, 74, 0.2);
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 5px 8px;
+    width: max-content;
+}
+
+h3 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.3rem;
+}
+
+p {
+    background-color: rgba(88, 128, 74, 0.2);
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.4rem;
+    padding: 5%;
+    width: max-content;
+}
+
+.emoji {
+    font-size: 1.5rem;
+}
+
 
 /* PORTFOLIO */
 
@@ -52,6 +78,15 @@ section {
 }
 
 /* CONTACT */
+
+#contact h2 {
+    margin-bottom: 5%;
+}
+
+#contact a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.4rem;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
