@@ -7,3 +7,7 @@ footer {
     justify-content: space-around;
     width: 100%;
 }
+
+.icon:hover {
+    color: var(--grey-purp);
+}

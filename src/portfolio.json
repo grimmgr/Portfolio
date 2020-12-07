@@ -1,43 +1,51 @@
 [
     {
         "id": "1",
-        "name":"SE7EN",
-        "link":"https://se-7-en.herokuapp.com/",
-        "image":"assets/images/se7en.png",
-        "description":"Bucketlist app to track and explore things to do before the world ends"
+        "name": "CHASTITY BELT MUSIC",
+        "link":"https://chastity-belt-music.herokuapp.com/",
+        "github": "https://github.com/grimmgr/chazzy",
+        "image":"",
+        "description":"Website for the band Chastity Belt, featuring an interactive Fan Art page and an admin login and view for the band."
     },
     {
         "id": "2",
-        "name":"SELLING SUNSET EMPLOYEE DIRECTORY",
-        "link":"https://grimmgr.github.io/Selling-Sunset-Employee-Directory/",
-        "image":"assets/images/sunset.jpg",
-        "description":"Built with React"
+        "name":"SE7EN",
+        "link":"https://se-7-en.herokuapp.com/",
+        "github": "https://github.com/grimmgr/se7en",
+        "image":"assets/images/se7en.png",
+        "description":"Bucketlist app to track and explore things to do before the world ends.  Users can add activities to their bucketlist, see other users' lists, and see a map of all activites."
     },
     {
         "id": "3",
-        "name":"CHEESEBURGER IN PARADISE",
-        "link":"https://infinite-plains-28150.herokuapp.com/",
-        "image":"assets/images/cheeseburger.png",
-        "description":"Practice with MySQL, Node, Express, Handlebars, and writing an ORM"
+        "name":"Budget Tracker",
+        "link":"https://trak-ur-m0n3y.herokuapp.com/",
+        "github": "https://github.com/grimmgr/Budget-Tracker",
+        "image":"",
+        "description":"Progressive web app for tracking income and expenses.  Data is stored using MongoDb, and user input is saved offline with the help of indexeddb."
     },
     {
         "id": "4",
-        "name":"SEASONS",
-        "link":"https://grimmgr.github.io/Seasons/",
-        "image":"assets/images/seasons.png",
-        "description":"Weather app for Justin Bieber fans"
+        "name":"SELLING SUNSET EMPLOYEE DIRECTORY",
+        "link":"https://grimmgr.github.io/Selling-Sunset-Employee-Directory/",
+        "github": "https://github.com/grimmgr/Selling-Sunset-Employee-Directory",
+        "image":"assets/images/sunset.jpg",
+        "description":"Built with React so users can filter and sort employees."
     },
     {
-        "id": "EMPLOYEE TRACKER",
-        "link":"https://github.com/grimmgr/Employee-Tracker",
-        "image":"assets/images/employee-tracker.png",
-        "description":"Command-line content magagement system for employers"
+        "id": "5",
+        "name":"WORKOUT TRACKER",
+        "link":"https://calm-beach-24650.herokuapp.com/",
+        "github": "https://github.com/grimmgr/Workout-Tracker",
+        "image":"",
+        "description":"Built with Node, Express, and MongoDB"
     },
     {
         "id": "6",
-        "name":"TURNIP DA BEET",
-        "link":"https://sbhwang23.github.io/Turnip-Da-Beet/",
-        "image":"assets/images/turnip.png",
-        "description":"Search recipes and related songs"
+        "name":"EMPLOYEE TRACKER",
+        "link":"https://github.com/grimmgr/Employee-Tracker",
+        "github": "https://github.com/grimmgr/Employee-Tracker",
+        "image":"assets/images/employee-tracker.png",
+        "description":"Command-line content magagement system for employers"
     }
+    
 ]

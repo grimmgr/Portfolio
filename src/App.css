@@ -10,6 +10,11 @@
     color: rgba(255, 255, 255, 1);
 }
 
+:root {
+    --grey-purp: rgb(84, 74, 77);
+    --light-green: rgba(88, 128, 74, 0.3);
+}
+
 html, body {
     height: 100%;
 }
@@ -29,6 +34,27 @@ section {
     scroll-snap-align: start;
 }
 
+#welcome {
+    padding-top: 30%;
+}
+
+#contact {
+    padding-top: 15%;
+}
+
+a {
+    color: var(--grey-purp);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--grey-purp);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
 h2 {
     background-color: rgba(88, 128, 74, 0.2);
     font-family: 'Inconsolata', monospace;
@@ -39,7 +65,7 @@ h2 {
 }
 
 p {
-    background-color: rgba(88, 128, 74, 0.3);
+    color: var(--grey-purp);
     font-family: 'Inconsolata', monospace;
     font-size: 1.1rem;
     padding: 5%;
@@ -47,6 +73,8 @@ p {
 }
 
 .emoji {
+    background-color: var(--light-green);
+    color: white;
     font-size: 1.5rem;
 }
 
@@ -56,6 +84,8 @@ p {
 #portfolio {
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    padding-bottom: 30%;
 }
 
 /* #portfolio-header {
@@ -64,19 +94,24 @@ p {
 } */
 
 .portfolio-wrapper {
-    align-items: center;
+    /* align-items: center; */
     display: flex;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     white-space: nowrap;
 }
 
+h2 {
+    background-color: transparent;
+    margin: 5px auto 30px auto;
+}
+
 /* CONTACT */
 
-#contact h2 {
+/* #contact h2 {
     margin-bottom: 5%;
-}
+} */
 
 #contact a {
     font-family: 'Inconsolata', monospace;

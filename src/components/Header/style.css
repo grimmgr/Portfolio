@@ -34,12 +34,3 @@ li {
     display: inline;
 }
 
-a {
-    color: rgb(243, 243, 243);
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
