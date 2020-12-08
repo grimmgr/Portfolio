@@ -6,7 +6,7 @@ export const Header = () => {
         <header>
             <h1>GRETCHEN GRIMM</h1>
             <nav>
-                <ul>
+                <ul className='nav-links'>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>

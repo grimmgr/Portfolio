@@ -17,7 +17,7 @@
 }
 
 .title-wrapper {
-    background-color: var(--light-green);
+    background-color: rgba(75, 75, 75, .7);
     border: 1px solid rgba(255, 255, 255, .8);
     height: fit-content;
     margin: 0 auto;
@@ -33,7 +33,7 @@ h3 {
     font-weight: 500;
 }
 
-.card p {
+.description {
     background-color: transparent;
     font-family: 'Open Sans', sans-serif;
     font-size: .9rem;
@@ -71,3 +71,22 @@ h3 {
     font-family: 'Inconsolata', monospace;
     font-size: 1.2rem;
 } */
+
+@media screen and (min-width: 700px) {
+    .card {
+        margin-bottom: 10px;
+        width: 90%
+    }
+}
+
+@media screen and (min-width: 700px) and (orientation: portrait) {
+    .card-wrapper {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 700px) and (orientation: landscape) {
+    .card-wrapper {
+        width: 33.3%;
+    }
+}

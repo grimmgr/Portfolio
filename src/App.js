@@ -6,18 +6,21 @@ import { Welcome } from './pages/Welcome';
 import { Portfolio } from './pages/Portfolio';
 import { Contact } from './pages/Contact';
 import { Footer } from './components/Footer';
+import { WidthProvider } from './utils/widthContext';
 
 const App = () => {
   return (
     <>
-        <Background />
-        <Header />
-        <main>
-            <Welcome />
-            <Portfolio />
-            <Contact />
-        </main>
-        <Footer />
+        <WidthProvider>
+            <Background />
+            <Header />
+            <main>
+                <Welcome />
+                <Portfolio />
+                <Contact />
+            </main>
+            <Footer />
+        </WidthProvider>
     </>
   );
 }

@@ -9,7 +9,7 @@ export const PortfolioCard = (props) => {
                 <div className='title-wrapper'>
                   <a href={link} target='_blank' rel='noreferrer'><h3>{name}</h3></a>
                 </div>
-                <p>{description}</p>
+                <p className='description'>{description}</p>
                 <div className='project-links'>
                     <a href={props.link} target='_blank' rel='noreferrer'>see it</a> 
                     <a href={props.github} target='_blank' rel='noreferrer'>see the code</a>
