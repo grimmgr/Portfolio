@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "CHASTITY BELT MUSIC",
-        "link":"https://chastity-belt-music.herokuapp.com/",
+        "link":"http://chastitybeltmusic.com/",
         "github": "https://github.com/grimmgr/chazzy",
         "image":"",
         "description":"Website for the band Chastity Belt, featuring an interactive Fan Art page and an admin login and view for the band."
@@ -37,7 +37,7 @@
         "link":"https://calm-beach-24650.herokuapp.com/",
         "github": "https://github.com/grimmgr/Workout-Tracker",
         "image":"",
-        "description":"Built with Node, Express, and MongoDB"
+        "description":"Users can log different excercises they complete during a workout, and see a graph of workouts they've done in the past week .Built with Node, Express, and MongoDB."
     },
     {
         "id": "6",
@@ -45,7 +45,7 @@
         "link":"https://github.com/grimmgr/Employee-Tracker",
         "github": "https://github.com/grimmgr/Employee-Tracker",
         "image":"assets/images/employee-tracker.png",
-        "description":"Command-line content magagement system for employers"
+        "description":"Command-line content magagement system for employers."
     }
     
 ]
