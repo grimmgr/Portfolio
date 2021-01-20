@@ -9,11 +9,12 @@ footer {
 }
 
 .icon {
+    color: var(--grey-purp);
     font-size: 1.4rem;
 }
 
 .icon:hover {
-    color: var(--grey-purp);
+    color: rgb(112, 99, 103);
 }
 
 @media screen and (orientation: landscape) and (max-height: 500px) {

@@ -208,8 +208,11 @@ h2 {
 }
 
 @media screen and (orientation: landscape) {
-    #welcome, #contact {
+    #welcome {
         padding-top: 10%;
+    }
+    #contact {
+        padding-top: 5%;
     }
 }
 
