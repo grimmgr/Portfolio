@@ -1,8 +1,8 @@
 #backgroundVideo {
     position: fixed;
-    top: -10%;
+    top: 0;
     right: -25%;
-    width: 200%;
+    width: 150%;
     z-index: -2;
 }
 
@@ -14,4 +14,26 @@
     bottom: 0;
     left: 0;
     z-index: -1;
+}
+
+@media screen and (min-width: 500px) and (orientation: portrait) {
+    #backgroundVideo {
+        right: -20%;
+        top: -15%;
+        width: 125%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    #backgroundVideo {
+        right: 0;
+        top: -40%;
+        width: 100%;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1200px) {
+    #backgroundVideo {
+        top: -60%;
+    }
 }
