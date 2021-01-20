@@ -90,7 +90,7 @@ p {
 }
 
 .portfolio-container {
-    bottom: 23%;
+    bottom: calc((100vh - 520px)/2);
     height: 600px;
     left: calc((100vw - 330px)/2);
     margin: 0 auto;
@@ -205,6 +205,12 @@ h2 {
   to {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (orientation: landscape) {
+    #welcome, #contact {
+        padding-top: 10%;
+    }
 }
 
 @media screen and (orientation: landscape) and (max-height: 500px) {
