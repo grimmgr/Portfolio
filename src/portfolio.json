@@ -5,7 +5,7 @@
         "link":"http://chastitybeltmusic.com/",
         "github": "https://github.com/grimmgr/chazzy",
         "image":"",
-        "description":"Website for the band Chastity Belt, featuring an interactive Fan Art page and an admin login and view for the band."
+        "description":"Website for the band Chastity Belt, featuring an interactive fan art page and an admin login and view for the band."
     },
     {
         "id": "2",
@@ -25,7 +25,7 @@
     },
     {
         "id": "4",
-        "name":"SELLING SUNSET EMPLOYEE DIRECTORY",
+        "name":"EMPLOYEE DIRECTORY",
         "link":"https://grimmgr.github.io/Selling-Sunset-Employee-Directory/",
         "github": "https://github.com/grimmgr/Selling-Sunset-Employee-Directory",
         "image":"assets/images/sunset.jpg",

@@ -17,7 +17,7 @@ export const Portfolio = () => {
                 <div id='card-wrapper0' className='card-wrapper'>
                     <div id='card0' className='card'>
                         <div className='cover'>
-                            <p id='arrow'>&#187;</p>
+                            <p className='symbol' id='arrow'>&#187;</p>
                             <h2>PORTFOLIO</h2>
                         </div>
                     </div>

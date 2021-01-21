@@ -10,10 +10,18 @@ export const PortfolioCard = (props) => {
                     <div className='title-wrapper'>
                         <a href={link} target='_blank' rel='noreferrer'><h3>{name}</h3></a>
                     </div>
-                    <p className='description'>{description}</p>
-                    <div className='project-links'>
-                        <a href={props.link} target='_blank' rel='noreferrer'>see it</a> 
-                        <a href={props.github} target='_blank' rel='noreferrer'>see the code</a>
+                    <div className='card-content'>
+                        <p className='description'>{description}</p>
+                        {/* <div className='preview'>
+                            <p className='symbol' id='triangle'>&#9660;</p>
+                            <p className='preview-text'>preview</p>
+                        </div> */}
+                        <div className='project-links-wrapper'>
+                            <div className='project-links'>
+                                <a href={props.link} target='_blank' rel='noreferrer'>see it</a> 
+                                <a href={props.github} target='_blank' rel='noreferrer'>see the code</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
