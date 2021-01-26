@@ -142,21 +142,78 @@ p {
     bottom: 50px;
     left: 25px;
 }
+
+#card1 .card-front {
+    background-image: url(./card-bckgrnds/cb.png);
+}
+
+#card1 h3 {
+    top: 30px;
+}
+
 #card2 {
     bottom: 40px;
     left: 20px;
 }
+
+#card2 .card-front {
+    background-image: url(./card-bckgrnds/seven.png);
+}
+
+#card2 h3 {
+    top: 190px;
+}
+
 #card3 {
     bottom: 30px;
     left: 15px;
 }
+
+#card3 .card-front {
+    background-image: url(./card-bckgrnds/sunset.png);
+}
+
+#card3 h3 {
+    color: black;
+    left: 20px;
+    text-align: left;
+    top: 30px;
+    width: 100px;
+}
+
 #card4 {
     bottom: 20px;
     left: 10px;
 }
+
+#card4 .card-front {
+    background-image: url(./card-bckgrnds/budget.png);
+}
+
+#card4 h3 {
+    color: black;
+    top: 50px;
+}
+
 #card5 {
     bottom: 10px;
     left: 5px;
+}
+
+#card5 .card-front {
+    background-image: url(./card-bckgrnds/seasons.png);
+}
+
+#card5 h3 {
+    top: 190px;
+}
+
+#card6 .card-front {
+    background-image: url(./card-bckgrnds/cheese.png);
+}
+
+#card6 h3 {
+    top: 145px;
 }
 
 .title-wrapper {
