@@ -21,7 +21,7 @@
         "link":"https://grimmgr.github.io/Selling-Sunset-Employee-Directory/",
         "github": "https://github.com/grimmgr/Selling-Sunset-Employee-Directory",
         "image":"assets/images/sunset.jpg",
-        "description":"Built with React so users can filter and sort employees."
+        "description":"Practice in creating a React app and using state to filter and sort."
     },
     {
         "id": "4",
@@ -29,7 +29,7 @@
         "link":"https://trak-ur-m0n3y.herokuapp.com/",
         "github": "https://github.com/grimmgr/Budget-Tracker",
         "image":"",
-        "description":"Progressive web app for tracking income and expenses.  Data is stored using MongoDb, and user input is saved offline with the help of indexeddb."
+        "description":"Practice in creating a progressive web app and storing data using MongoDb.  User input is saved offline with the help of indexeddb."
     },
     {
         "id": "5",
@@ -37,7 +37,7 @@
         "link":"https://calm-beach-24650.herokuapp.com/",
         "github": "https://github.com/grimmgr/Workout-Tracker",
         "image":"",
-        "description":"Users can log different excercises they complete during a workout, and see a graph of workouts they've done in the past week .Built with Node, Express, and MongoDB."
+        "description":"Weather dashboard for Justin Bieber fans."
     },
     {
         "id": "6",
@@ -45,7 +45,7 @@
         "link":"https://github.com/grimmgr/Employee-Tracker",
         "github": "https://github.com/grimmgr/Employee-Tracker",
         "image":"assets/images/employee-tracker.png",
-        "description":"Command-line content magagement system for employers."
+        "description":"Practice in writing an ORM."
     }
     
 ]

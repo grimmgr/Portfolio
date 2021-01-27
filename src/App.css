@@ -73,8 +73,11 @@ p {
     color: var(--grey-purp);
     font-family: 'Inconsolata', monospace;
     font-size: 1.3rem;
-    padding: 5%;
     width: max-content;
+}
+
+.pad {
+    padding: 5%;
 }
 
 .emoji {
