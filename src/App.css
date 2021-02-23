@@ -114,26 +114,30 @@ p {
 }
 
 #card-wrapper0 {
-    z-index: 6;
+    z-index: 7;
 }
 
 #card-wrapper1 {
-    z-index: 5;
+    z-index: 6;
 }
 #card-wrapper2 {
-    z-index: 4;
+    z-index: 5;
 }
 #card-wrapper3 {
-    z-index: 3;
+    z-index: 4;
 }
 #card-wrapper4 {
-    z-index: 2;
+    z-index: 3;
 }
 #card-wrapper5 {
-    z-index: 1;
+    z-index: 2;
 }
 #card-wrapper6 {
-    z-index: 0;
+    z-index: 1;
+}
+
+#card-wrapper7 {
+    z-index: 0
 }
 
 #card0 {

@@ -82,6 +82,15 @@ export const Portfolio = () => {
                     image={portfolioJSON[5].image}
                     description={portfolioJSON[5].description}
                 />
+                <div className='transparent'></div>
+                <div id='card-wrapper7' className='card-wrapper'>
+                    <div id='card7' className='card'>
+                        <div className='cover'>
+                            <p className='symbol' id='arrow'>&#187;</p>
+                            <h2>BACK TO TOP</h2>
+                        </div>
+                    </div>
+                </div>
 
             {/* { portfolioJSON.map(project => (
                 <PortfolioCard

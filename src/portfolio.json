@@ -5,7 +5,7 @@
         "link":"http://chastitybeltmusic.com/",
         "github": "https://github.com/grimmgr/chazzy",
         "image":"",
-        "description":"Website for the band Chastity Belt, featuring an interactive fan art page and an admin login and view for the band."
+        "description":"Website for the band Chastity Belt. Fans can submit instagram posts to be added to the Fan Art page.  Band members can login through a private page to either post submissions to the public page or delete them."
     },
     {
         "id": "2",
@@ -29,23 +29,23 @@
         "link":"https://trak-ur-m0n3y.herokuapp.com/",
         "github": "https://github.com/grimmgr/Budget-Tracker",
         "image":"",
-        "description":"Practice in creating a progressive web app and storing data using MongoDb.  User input is saved offline with the help of indexeddb."
+        "description":"Practice in creating a progressive web app and storing data using MongoDb.  User input is saved offline using indexeddb."
     },
     {
         "id": "5",
         "name":"SEASONS",
-        "link":"https://calm-beach-24650.herokuapp.com/",
-        "github": "https://github.com/grimmgr/Workout-Tracker",
+        "link":"https://grimmgr.github.io/Seasons/",
+        "github": "https://github.com/grimmgr/Seasons",
         "image":"",
         "description":"Weather dashboard for Justin Bieber fans."
     },
     {
         "id": "6",
         "name":"CHEESEBURGER IN PARADISE",
-        "link":"https://github.com/grimmgr/Employee-Tracker",
-        "github": "https://github.com/grimmgr/Employee-Tracker",
+        "link":"https://infinite-plains-28150.herokuapp.com/",
+        "github": "https://github.com/grimmgr/Cheeseburger-In-Paradise",
         "image":"assets/images/employee-tracker.png",
-        "description":"Practice in writing an ORM."
+        "description":"Practice in MySQL and writing an ORM."
     }
     
 ]
