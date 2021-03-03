@@ -15,6 +15,7 @@
 :root {
     --grey-purp: rgb(84, 74, 77);
     --light-green: rgba(88, 128, 74, 0.3);
+    --grey: rgba(130, 130, 130);
     scroll-behavior: smooth;
 }
 
@@ -24,7 +25,7 @@ html, body {
 }
 
 main {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     position: fixed;
     top: 120px;
     bottom: 40px;
@@ -91,26 +92,28 @@ p {
 
 #portfolio {
     overflow: hidden;
+    padding: 0;
 }
 
 .portfolio-container {
-    bottom: calc((100vh - 495px)/2);
-    height: 600px;
-    left: calc((100vw - 305px)/2);
+    height: 100%;
+    /* left: calc((100vw - 365px)/2); */
     margin: 0 auto;
-    overflow-y: scroll;
-    /* padding-bottom: 60px;
-    padding-left: 30px; */
-    position: absolute;
+    /* overflow-y: scroll; */
+    /* position: absolute; */
     scroll-behavior: smooth;
-    width: min-content;
+    /* width: min-content; */
 }
 
 .card-wrapper {
     bottom: 0;
-    height: 275px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
     position: sticky;
-    width: 275px;
+    width: 100%;
 }
 
 #card-wrapper0 {
@@ -140,47 +143,61 @@ p {
     z-index: 0
 }
 
-#card0 {
+
+/* #card0 {
     bottom: 60px;
     left: 30px;
-}
+} */
 
-#card1 {
+/* #card1 {
     bottom: 50px;
     left: 25px;
-}
+} */
 
 #card1 .card-front {
-    background-image: url(./card-bckgrnds/cb.png);
+    background-image: url(./card-bckgrnds/cb2.png);
 }
 
 #card1 h3 {
-    top: 30px;
+    top: 50px;
 }
 
-#card2 {
+/* #card2 {
     bottom: 40px;
     left: 20px;
-}
+} */
 
 #card2 .card-front {
-    background-image: url(./card-bckgrnds/seven.png);
+    background-image: url(./card-bckgrnds/indoor.png);
 }
 
 #card2 h3 {
     top: 190px;
 }
 
-#card3 {
+/* #card3 {
     bottom: 30px;
     left: 15px;
-}
+} */
 
 #card3 .card-front {
-    background-image: url(./card-bckgrnds/sunset.png);
+    background-image: url(./card-bckgrnds/seven.png);
 }
 
 #card3 h3 {
+    top: 190px;
+}
+
+/* #card4 {
+    bottom: 20px;
+    left: 10px;
+} */
+
+#card4 .card-front {
+    background-image: url(./card-bckgrnds/sunset.png);
+}
+
+#card4 h3 {
     color: black;
     left: 20px;
     text-align: left;
@@ -188,39 +205,26 @@ p {
     width: 100px;
 }
 
-#card4 {
-    bottom: 20px;
-    left: 10px;
-}
+/* #card5 {
+    bottom: 10px;
+    left: 5px;
+} */
 
-#card4 .card-front {
+#card5 .card-front {
     background-image: url(./card-bckgrnds/budget.png);
 }
 
-#card4 h3 {
+#card5 h3 {
     color: black;
     top: 50px;
 }
 
-#card5 {
-    bottom: 10px;
-    left: 5px;
-}
-
-#card5 .card-front {
+#card6 .card-front {
     background-image: url(./card-bckgrnds/seasons.png);
 }
 
-#card5 h3 {
-    top: 190px;
-}
-
-#card6 .card-front {
-    background-image: url(./card-bckgrnds/cheese.png);
-}
-
 #card6 h3 {
-    top: 145px;
+    top: 190px;
 }
 
 .title-wrapper {

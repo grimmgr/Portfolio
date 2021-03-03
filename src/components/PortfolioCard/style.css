@@ -4,17 +4,18 @@
     height: 275px;
     margin: 0 auto;
     padding: 9px;
+    transition: all ease-in-out 800ms;
     white-space: normal;
     width: 275px;
 }
 
 .transparent {
     height: 400px;
-    width: 350px;
+    /* width: 350px; */
 }
 
 .cover {
-    background-color: rgba(75, 75, 75, .7);
+    background-color: var(--grey);
     border: 1px solid rgba(255, 255, 255, .8);
     height: 100%;
     padding-top: 20%;
@@ -22,30 +23,37 @@
 }
 
 .card-front {
+    background-position: center;
     background-size: cover;
     cursor: pointer;
     height: 100%;
     width: 100%;
 }
 
-.card-back {
-    background-color: white;
-    bottom: 255px;
-    height: 100%;
-    transform: rotate3d(0, 1, 0, 180deg);
-    width: 100%;
+.card-front {
+    filter: grayscale(80%);
 }
 
-.card-front:hover {
-    filter: opacity(90%);
+.card-front:hover,
+.card-front:active {
+    filter: grayscale(0%);
+}
+
+.card-back {
+    background-color: white;
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: rotate3d(0, 1, 0, 180deg);
 }
 
 .title-wrapper {
-    background-color: rgba(75, 75, 75, .7);
+    background-color: var(--grey);
     border: 1px solid rgba(255, 255, 255, .8);
     height: fit-content;
     margin: 0 auto;
-    margin-bottom: 10px;
     padding: 5px 10px;
     text-align: center;
     width: 100%;
@@ -70,6 +78,13 @@ h3 {
     height: 183px;
 }
 
+.role {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0 auto;
+}
+
 .description {
     background-color: transparent;
     font-family: 'Open Sans', sans-serif;
@@ -79,57 +94,27 @@ h3 {
     width: 100%;
 }
 
-
-
-.preview {
-    background-color: rgba(75, 75, 75, .7);
-    height: 40px;
-    margin: 0 auto;
-    width: 80px;
-}
-
-.preview p {
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: .8rem;
-    font-weight: 400;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-}
-
-#triangle {
-    bottom: 2px;
-    padding-top: 6px;
-}
-
-.preview-text {
-    bottom: 10px;
-}
-
-
-
 /* .project-links-wrapper {
     bottom: 4%;
     position: absolute;
     width: 100%;
 } */
 
-.project-links {
+/* .project-links {
     display: flex;
     justify-content: space-evenly;
-}
+} */
 
-.project-links a {
+/* .project-links a {
     border-bottom: 1px solid var(--grey-purp);
     font-size: .9rem;
     /* margin-top: 20px; */
-}
+/*} */
 
-.project-links a:hover {
-    border-bottom: 1px solid rgb(142 159 145);
-    color:rgb(142 159 145);
-}
+/* .project-links a:hover {
+    border-bottom: 1px solid rgb(142, 159, 145);
+    color: rgb(142, 159, 145);
+} */
 
 .flip-arrow {
     bottom: -10px;
@@ -148,7 +133,7 @@ h3 {
 
 .flip-enter-active {
     transform: rotate3d(0, 1, 0, 0deg);
-    transition: transform 800ms;
+    transition: all 800ms;
 }
 
 .flip-enter-done {
@@ -157,7 +142,7 @@ h3 {
 
 .flip-exit-active {
     transform: rotate3d(0, 1, 0, -180deg);
-    transition: transform 800ms;
+    transition: all 800ms;
 }
 
 .flip-exit-done {
@@ -170,7 +155,7 @@ h3 {
 
 .card-back-enter-active {
     opacity: 1;
-    transition: opacity 800ms;
+    transition: all 800ms;
 }
 
 .card-back-exit {
@@ -179,7 +164,7 @@ h3 {
 
 .card-back-exit-active {
     opacity: 0;
-    transition: opacity 800ms;
+    transition: all 800ms;
 }
 
 /* @media screen and (min-width: 700px) {

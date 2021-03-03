@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import { useWidth } from '../utils/widthContext';
+import { useDisplayCard } from '../utils/displayCardContext';
 import { PortfolioCard } from '../components/PortfolioCard';
 import portfolioJSON from '../portfolio.json';
 
 export const Portfolio = () => {
-    // const width = useWidth().width;
+
+    const displayCard = useDisplayCard().displayCard;
+    
     return (
         <section id='portfolio'>
             {/* { (width >= 700) &&
@@ -12,8 +15,7 @@ export const Portfolio = () => {
                     <h2>PORTFOLIO</h2>
                 </div>
             } */}
-            <div className='portfolio-container'>
-                <div className='transparent'></div>
+            <div className='portfolio-container' style={ (displayCard === true) ? { overflow: 'hidden' } : { overflow: 'scroll'} } >
                 <div id='card-wrapper0' className='card-wrapper'>
                     <div id='card0' className='card'>
                         <div className='cover'>
@@ -22,17 +24,15 @@ export const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                <div className='transparent'></div>
                 <PortfolioCard
                     key={portfolioJSON[0].id}
                     id={portfolioJSON[0].id}
                     name={portfolioJSON[0].name}
                     link={portfolioJSON[0].link}
-                    github={portfolioJSON[0].github}
-                    image={portfolioJSON[0].image}
+                    linkDisplay={portfolioJSON[0].link_display}
+                    role={portfolioJSON[0].role}
                     description={portfolioJSON[0].description}
                 />
-                <div className='transparent'></div>
                 <PortfolioCard
                     key={portfolioJSON[1].id}
                     id={portfolioJSON[1].id}
@@ -42,7 +42,6 @@ export const Portfolio = () => {
                     image={portfolioJSON[1].image}
                     description={portfolioJSON[1].description}
                 />
-                <div className='transparent'></div>
                 <PortfolioCard
                     key={portfolioJSON[2].id}
                     id={portfolioJSON[2].id}
@@ -52,7 +51,6 @@ export const Portfolio = () => {
                     image={portfolioJSON[2].image}
                     description={portfolioJSON[2].description}
                 />
-                <div className='transparent'></div>
                 <PortfolioCard
                     key={portfolioJSON[3].id}
                     id={portfolioJSON[3].id}
@@ -62,7 +60,6 @@ export const Portfolio = () => {
                     image={portfolioJSON[3].image}
                     description={portfolioJSON[3].description}
                 />
-                <div className='transparent'></div>
                 <PortfolioCard
                     key={portfolioJSON[4].id}
                     id={portfolioJSON[4].id}
@@ -72,7 +69,6 @@ export const Portfolio = () => {
                     image={portfolioJSON[4].image}
                     description={portfolioJSON[4].description}
                 />
-                <div className='transparent'></div>
                 <PortfolioCard
                     key={portfolioJSON[5].id}
                     id={portfolioJSON[5].id}
@@ -82,7 +78,6 @@ export const Portfolio = () => {
                     image={portfolioJSON[5].image}
                     description={portfolioJSON[5].description}
                 />
-                <div className='transparent'></div>
                 <div id='card-wrapper7' className='card-wrapper'>
                     <div id='card7' className='card'>
                         <div className='cover'>

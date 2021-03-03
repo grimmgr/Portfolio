@@ -3,49 +3,43 @@
         "id": "1",
         "name": "CHASTITY BELT MUSIC",
         "link":"http://chastitybeltmusic.com/",
-        "github": "https://github.com/grimmgr/chazzy",
-        "image":"",
-        "description":"Website for the band Chastity Belt. Fans can submit instagram posts to be added to the Fan Art page.  Band members can login through a private page to either post submissions to the public page or delete them."
+        "link_display": "chastitybeltmusic.com",
+        "role": "FULL STACK DEVELOPER",
+        "description":"A website for the band Chastity Belt built with React.  As sole author I designed the site to reflect the band’s personality, and implemented a backend and API that allows fans to submit art to a Fan Art Page.  Band members can login through a private, password protected page to either post submissions to the public page or delete them."
     },
     {
         "id": "2",
-        "name":"SE7EN",
-        "link":"https://se-7-en.herokuapp.com/",
-        "github": "https://github.com/grimmgr/se7en",
-        "image":"assets/images/se7en.png",
-        "description":"Bucketlist app to track and explore things to do before the world ends.  Users can add activities to their bucketlist, see other users' lists, and see a map of all activites."
+        "name":"INDOOR COLLECTIVE",
+        "link":"https://www.indoorcollective.com/",
+        "description":"Website for the startup Indoor Collective."
     },
     {
         "id": "3",
-        "name":"SELLING SUNSET EMPLOYEE DIRECTORY",
-        "link":"https://grimmgr.github.io/Selling-Sunset-Employee-Directory/",
-        "github": "https://github.com/grimmgr/Selling-Sunset-Employee-Directory",
-        "image":"assets/images/sunset.jpg",
-        "description":"Practice in creating a React app and using state to filter and sort."
+        "name":"SE7EN",
+        "link":"https://se-7-en.herokuapp.com/",
+        "github": "https://github.com/grimmgr/se7en",
+        "description":"Bucketlist app to track and explore things to do before the world ends.  Users can add activities to their bucketlist, see other users' lists, and see a map of all activites."
     },
     {
         "id": "4",
-        "name":"BUDGET TRACKER",
-        "link":"https://trak-ur-m0n3y.herokuapp.com/",
-        "github": "https://github.com/grimmgr/Budget-Tracker",
-        "image":"",
-        "description":"Practice in creating a progressive web app and storing data using MongoDb.  User input is saved offline using indexeddb."
+        "name":"SELLING SUNSET EMPLOYEE DIRECTORY",
+        "link":"https://grimmgr.github.io/Selling-Sunset-Employee-Directory/",
+        "github": "https://github.com/grimmgr/Selling-Sunset-Employee-Directory",
+        "description":"Practice in creating a React app and using state to filter and sort."
     },
     {
         "id": "5",
-        "name":"SEASONS",
-        "link":"https://grimmgr.github.io/Seasons/",
-        "github": "https://github.com/grimmgr/Seasons",
-        "image":"",
-        "description":"Weather dashboard for Justin Bieber fans."
+        "name":"BUDGET TRACKER",
+        "link":"https://trak-ur-m0n3y.herokuapp.com/",
+        "github": "https://github.com/grimmgr/Budget-Tracker",
+        "description":"Practice in creating a progressive web app and storing data using MongoDb.  User input is saved offline using indexeddb."
     },
     {
         "id": "6",
-        "name":"CHEESEBURGER IN PARADISE",
-        "link":"https://infinite-plains-28150.herokuapp.com/",
-        "github": "https://github.com/grimmgr/Cheeseburger-In-Paradise",
-        "image":"assets/images/employee-tracker.png",
-        "description":"Practice in MySQL and writing an ORM."
+        "name":"SEASONS",
+        "link":"https://grimmgr.github.io/Seasons/",
+        "github": "https://github.com/grimmgr/Seasons",
+        "description":"Weather dashboard for Justin Bieber fans."
     }
     
 ]
