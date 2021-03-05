@@ -2,24 +2,24 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
     margin: 0;
     padding: 0;
     position: relative;
-    color: rgba(255, 255, 255, 1);
     scroll-behavior: smooth;
 }
 
 :root {
     --grey-purp: rgb(84, 74, 77);
     --light-green: rgba(88, 128, 74, 0.3);
-    --grey: rgba(130, 130, 130);
+    --grey: rgb(95, 95, 95);
     scroll-behavior: smooth;
 }
 
 html, body {
+    color: var(--grey-purp);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
     height: 100%;
     scroll-behavior: smooth;
 }
@@ -27,9 +27,10 @@ html, body {
 main {
     /* overflow-y: scroll; */
     position: fixed;
-    top: 120px;
-    bottom: 40px;
+    /* top: 120px; */
+    /* bottom: 40px; */
     scroll-snap-type: y mandatory;
+    transition: all 800ms ease-in-out;
     width: 100%;
 }
 
@@ -61,7 +62,7 @@ a:hover {
 }
 
 h2 {
-    background-color: transparent;
+    color: white;
     font-family: 'Inconsolata', monospace;
     font-size: 1.4rem;
     font-weight: 400;
@@ -70,15 +71,12 @@ h2 {
     width: max-content;
 }
 
-p {
+.special {
     color: var(--grey-purp);
     font-family: 'Inconsolata', monospace;
     font-size: 1.3rem;
-    width: max-content;
-}
-
-.pad {
     padding: 5%;
+    width: max-content;
 }
 
 .emoji {
@@ -97,154 +95,8 @@ p {
 
 .portfolio-container {
     height: 100%;
-    /* left: calc((100vw - 365px)/2); */
     margin: 0 auto;
-    /* overflow-y: scroll; */
-    /* position: absolute; */
     scroll-behavior: smooth;
-    /* width: min-content; */
-}
-
-.card-wrapper {
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    margin: 0 auto;
-    position: sticky;
-    width: 100%;
-}
-
-#card-wrapper0 {
-    z-index: 7;
-}
-
-#card-wrapper1 {
-    z-index: 6;
-}
-#card-wrapper2 {
-    z-index: 5;
-}
-#card-wrapper3 {
-    z-index: 4;
-}
-#card-wrapper4 {
-    z-index: 3;
-}
-#card-wrapper5 {
-    z-index: 2;
-}
-#card-wrapper6 {
-    z-index: 1;
-}
-
-#card-wrapper7 {
-    z-index: 0
-}
-
-
-/* #card0 {
-    bottom: 60px;
-    left: 30px;
-} */
-
-/* #card1 {
-    bottom: 50px;
-    left: 25px;
-} */
-
-#card1 .card-front {
-    background-image: url(./card-bckgrnds/cb2.png);
-}
-
-#card1 h3 {
-    top: 50px;
-}
-
-/* #card2 {
-    bottom: 40px;
-    left: 20px;
-} */
-
-#card2 .card-front {
-    background-image: url(./card-bckgrnds/indoor.png);
-}
-
-#card2 h3 {
-    top: 190px;
-}
-
-/* #card3 {
-    bottom: 30px;
-    left: 15px;
-} */
-
-#card3 .card-front {
-    background-image: url(./card-bckgrnds/seven.png);
-}
-
-#card3 h3 {
-    top: 190px;
-}
-
-/* #card4 {
-    bottom: 20px;
-    left: 10px;
-} */
-
-#card4 .card-front {
-    background-image: url(./card-bckgrnds/sunset.png);
-}
-
-#card4 h3 {
-    color: black;
-    left: 20px;
-    text-align: left;
-    top: 30px;
-    width: 100px;
-}
-
-/* #card5 {
-    bottom: 10px;
-    left: 5px;
-} */
-
-#card5 .card-front {
-    background-image: url(./card-bckgrnds/budget.png);
-}
-
-#card5 h3 {
-    color: black;
-    top: 50px;
-}
-
-#card6 .card-front {
-    background-image: url(./card-bckgrnds/seasons.png);
-}
-
-#card6 h3 {
-    top: 190px;
-}
-
-.title-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 0;
-}
-
-.symbol {
-    color: white;
-    font-size: 3rem;
-    font-weight: lighter;
-    height: 30px;
-    line-height: 20px;
-    margin: 0 auto;
-    padding: 0;
-    transform: rotate(-90deg);
-    white-space: nowrap;
-    width: 30px;
 }
 
 /* CONTACT */

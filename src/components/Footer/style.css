@@ -5,6 +5,7 @@ footer {
     height: 40px;
     position: fixed;
     justify-content: space-around;
+    transition: all 800ms ease-in-out;
     width: 100%;
 }
 

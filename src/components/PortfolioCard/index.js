@@ -4,7 +4,8 @@ import './style.css';
 import { useDisplayCard } from '../../utils/displayCardContext';
 
 export const PortfolioCard = (props) => {
-    const { id, name, link, linkDisplay, role, description } = props;
+    const { id, name, link, linkDisplay, role, description, video, image, stackIndex, logo } = props;
+    const [ zIndex, setZIndex ] = useState(stackIndex);
     const [ cardWidth, setCardWidth ] = useState(275);
     const [ cardHeight, setCardHeight ] = useState(275);
     const [ flipCard, setFlipCard ] = useState(false);
@@ -14,31 +15,40 @@ export const PortfolioCard = (props) => {
 
     const grow = () => {
         setCardWidth('100%');
-        setCardHeight('100%')
+        setCardHeight('100%');
+        setZIndex(10);
         setDisplayCard(true);
     }
 
     const shrink = () => {
         setCardWidth(275);
         setCardHeight(275);
+        setZIndex(stackIndex);
         setDisplayCard(false);
     }
 
     const scrollCardToView = () => { 
-        cardRef.current.scrollIntoView(true);
+        cardRef.current.scrollIntoView( {block: 'start' });
     }
+
+    let cardPadding;
+
+    flipCard ? cardPadding = 0 : cardPadding = '9px';
+
+    // style={ flipCard ? { display: 'none' } : { display: 'block' } }
 
     return (
 
-            <div id={`card-wrapper${id}`} className='card-wrapper' >
+            <div id={`card-wrapper${id}`} className='card-wrapper' style={{ zIndex: zIndex }} >
                 <CSSTransition 
                     in={!flipCard}
                     timeout={800}
                     classNames='flip'
                     >
-                    <div id={`card${id}`} className='card' style={{ width: cardWidth, height: cardHeight }} ref={cardRef} >
-                        <div className='card-front' onClick={ () => setFlipCard(true) }>
-                            <h3>{name}</h3>
+                    <div id={`card${id}`} className='card' style={{ width: cardWidth, height: cardHeight, padding: cardPadding }} ref={cardRef} >
+                        <div id={`card-front${id}`} className='card-front' onClick={ () => setFlipCard(true) }>
+                            { logo && <img id={`logo${id}`} className='project-name' src={logo} alt='project logo' /> }
+                            <h3 className='project-name'>{name}</h3>
                         </div>
                         <CSSTransition
                             in={flipCard}
@@ -50,15 +60,24 @@ export const PortfolioCard = (props) => {
                             onExit={shrink}
                             unmountOnExit
                             >
-                            <div className='card-back' ref={nodeRef}>
-                                <div className='title-wrapper'>
-                                    <a href={link} target='_blank' rel='noreferrer'><h4>{linkDisplay}</h4></a>
-                                </div>
-                                <div className='card-content'>
+                            <div id={`card-back${id}`} className='card-back' ref={nodeRef}>
+                                <p className='close' onClick={ () => setFlipCard(false) }>X</p>
+                                <div className='card-back-content'>
+                                    <div className='title-wrapper'>
+                                        <a href={link} target='_blank' rel='noreferrer'><h4>{linkDisplay}</h4></a>
+                                    </div>
                                     <p className='role'>{role}</p>
                                     <p className='description'>{description}</p>
+                                    <div className='demo'>
+                                        { props.video ?
+                                            <video className='demo-vid' controls >
+                                                <source src={video} type='video/mp4'></source>
+                                            </video>
+                                        :
+                                            <img className='demo-pic' src={image} alt='still of project' />
+                                        }
+                                    </div>
                                 </div>
-                                <p className='flip-arrow' onClick={ () => setFlipCard(false) }>&#8594;</p>
                             </div>
                         </CSSTransition>
                     </div>
