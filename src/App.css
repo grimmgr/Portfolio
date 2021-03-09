@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&family=Libre+Barcode+39+Text&family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&family=Open+Sans:wght@300;400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -49,17 +49,16 @@ section {
 }
 
 a {
-    color: var(--grey-purp);
     text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
     color: var(--grey-purp);
-}
+} */
 
-a:hover {
+/* a:hover {
     color: rgb(255, 255, 255);
-}
+} */
 
 h2 {
     color: white;
@@ -105,10 +104,10 @@ h2 {
     margin-bottom: 5%;
 } */
 
-#contact a {
+/* #contact a {
     font-family: 'Inconsolata', monospace;
     font-size: 1.3rem;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

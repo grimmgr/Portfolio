@@ -36,7 +36,7 @@
         "link":"https://grimmgr.github.io/Selling-Sunset-Employee-Directory/",
         "link_display": "SELLING SUNSET EMPLOYEE DIRECTORY",
         "role": "SOLE AUTHOR",
-        "description":"A prjoct I completed to practice using state to sort and filter data in React.",
+        "description":"A project I completed to practice using state to sort and filter data in React apps.",
         "video":"assets/video/ss_demo.mp4",
         "stack_index": "3"
     },
