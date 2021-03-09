@@ -4,7 +4,7 @@ import './style.css';
 import { useDisplayCard } from '../../utils/displayCardContext';
 
 export const PortfolioCard = (props) => {
-    const { id, name, link, linkDisplay, role, description, video, image, stackIndex, logo } = props;
+    const { id, name, link, linkDisplay, role, description, video, image, stackIndex, logo, top, right } = props;
     const [ zIndex, setZIndex ] = useState(stackIndex);
     const [ cardWidth, setCardWidth ] = useState(275);
     const [ cardHeight, setCardHeight ] = useState(275);
@@ -32,10 +32,34 @@ export const PortfolioCard = (props) => {
     }
 
     let cardPadding;
+    let cardTop;
+    let cardRight;
+    let cardRotation;
 
-    flipCard ? cardPadding = 0 : cardPadding = '9px';
+    if ( flipCard ) {
+        cardPadding = 0;
+        cardTop = 0;
+        cardRight = 0;
+        cardRotation = 0;
 
-    // style={ flipCard ? { display: 'none' } : { display: 'block' } }
+    } else { 
+        cardPadding = '10px';
+        cardTop = `${top}px`;
+        cardRight = `${right}px`;
+    }
+
+    // cardTop = `${(Math.floor(Math.random() * (7) - 3)) * 5}px`;
+    // cardRight = `${(Math.floor(Math.random() * (7) - 3)) * 5}px`;
+    // cardRotation = Math.floor(Math.random() * (21) - 10);
+
+    const cardStyles = { 
+        width: cardWidth, 
+        height: cardHeight, 
+        padding: cardPadding,
+        top: cardTop,
+        right: cardRight
+    }
+
 
     return (
 
@@ -45,7 +69,7 @@ export const PortfolioCard = (props) => {
                     timeout={800}
                     classNames='flip'
                     >
-                    <div id={`card${id}`} className='card' style={{ width: cardWidth, height: cardHeight, padding: cardPadding }} ref={cardRef} >
+                    <div id={`card${id}`} className='card' style={ cardStyles } ref={cardRef} >
                         <div id={`card-front${id}`} className='card-front' onClick={ () => setFlipCard(true) }>
                             { logo && <img id={`logo${id}`} className='project-name' src={logo} alt='project logo' /> }
                             <h3 className='project-name'>{name}</h3>
