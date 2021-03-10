@@ -15,19 +15,15 @@ h1 {
     font-size: 1.8rem;
     font-weight: 400;
     letter-spacing: .4em;
-    line-height: 1.1;
+    line-height: 1.2;
     position: relative;
-    width: 50%;
-}
-
-nav {
-    width: 100%
+    width: 60%;
 }
 
 .nav-links {
     font-family: 'Inconsolata', monospace;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 1.7;
     list-style: none;
     text-align: right;
 }
@@ -44,37 +40,17 @@ nav {
     right: 0;
 }
 
-@media screen and (orientation: landscape) and (max-height: 500px) {
-    header {
-        height: 100px;
+@media screen and (min-width: 651px) {
+    .header-center-line {
+        bottom: 40px;
+    }
+    .nav-links {
+        top: 18px;
     }
 }
 
 @media screen and (min-width: 700px) {
-    h1 {
-        font-size: 2rem;
-    }
-    .nav-links {
-        display: flex;
-        justify-content: flex-end;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    nav li {
-        margin-right: 5%;
+    header {
+        padding: 0 5%;
     }
 }
-
-/* @media screen and (min-width: 700px) and (orientation: landscape) {
-    .nav-links {
-        display: flex;
-        justify-content: flex-end;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    nav li {
-        margin-right: 5%;
-    }
-} */

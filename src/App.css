@@ -63,8 +63,8 @@ a {
 h2 {
     color: white;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 500;
     margin: 0 auto;
     padding: 20px 8px 5px 8px;
     width: max-content;
@@ -72,8 +72,8 @@ h2 {
 
 .special {
     font-family: 'Inconsolata', monospace;
-    font-size: 1.3rem;
-    padding: 5%;
+    font-size: 1.1rem;
+    padding: 20px;
     width: max-content;
 }
 
@@ -81,6 +81,8 @@ h2 {
     background-color: var(--light-green);
     color: white;
     font-size: 1.5rem;
+    padding: 20px;
+    width: max-content;
 }
 
 
@@ -93,7 +95,6 @@ h2 {
 
 .portfolio-container {
     height: 100%;
-    margin: 0 auto;
     scroll-behavior: smooth;
 }
 
@@ -130,28 +131,32 @@ h2 {
 @media screen and (orientation: landscape) and (max-height: 500px) {
     main {
         position: relative;
-        top: 0;
+    }
+    footer {
+        top: 150px;
     }
     #welcome {
-        padding-top: 5%;
+        padding-top: 0;
     }
     #portfolio {
         height: 100vh;
     }
-    .portfolio-container {
-        bottom: 0;
-    }
-    #contact {
-        padding-bottom: 0;
-        padding-top: 5%;
-    }
 }
 
-@media screen and (min-width: 700px) {
-    a {
-        font-size: 1.1rem;
-    }
+@media screen and (min-width: 750px) {
     .emoji {
         font-size: 1.7rem;
+    }
+    .special {
+        font-size: 1.2rem;
+    }
+    #portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .portfolio-container {
+        bottom: 20px;
+        max-height: 700px;
     }
 }

@@ -6,8 +6,8 @@ import { useDisplayCard } from '../../utils/displayCardContext';
 export const PortfolioCard = (props) => {
     const { id, name, link, linkDisplay, role, description, video, image, stackIndex, logo, top, right } = props;
     const [ zIndex, setZIndex ] = useState(stackIndex);
-    const [ cardWidth, setCardWidth ] = useState(275);
-    const [ cardHeight, setCardHeight ] = useState(275);
+    const [ cardWidth, setCardWidth ] = useState(270);
+    const [ cardHeight, setCardHeight ] = useState(270);
     const [ flipCard, setFlipCard ] = useState(false);
     const setDisplayCard = useDisplayCard().setDisplayCard;
     const cardRef = useRef(null);
@@ -21,8 +21,8 @@ export const PortfolioCard = (props) => {
     }
 
     const shrink = () => {
-        setCardWidth(275);
-        setCardHeight(275);
+        setCardWidth(270);
+        setCardHeight(270);
         setZIndex(stackIndex);
         setDisplayCard(false);
     }
