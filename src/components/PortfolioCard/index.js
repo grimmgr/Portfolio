@@ -91,15 +91,17 @@ export const PortfolioCard = (props) => {
                                         <a href={link} target='_blank' rel='noreferrer'><h4>{linkDisplay}</h4></a>
                                     </div>
                                     <p className='role'>{role}</p>
-                                    <p className='description'>{description}</p>
-                                    <div className='demo'>
-                                        { props.video ?
-                                            <video className='demo-vid' controls >
-                                                <source src={video} type='video/mp4'></source>
-                                            </video>
-                                        :
-                                            <img className='demo-pic' src={image} alt='still of project' />
-                                        }
+                                    <div className='content-flex-container'>
+                                        <p className='description'>{description}</p>
+                                        <div className='demo-container'>
+                                            { props.video ?
+                                                <video className='demo-vid' controls >
+                                                    <source src={video} type='video/mp4'></source>
+                                                </video>
+                                            :
+                                                <img className='demo-pic' src={image} alt='still of project' />
+                                            }
+                                        </div>
                                     </div>
                                 </div>
                             </div>
